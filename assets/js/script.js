@@ -17,22 +17,22 @@ function wordCount() {
     document.getElementById("charaCount").innerHTML =  "<b>"+text.length+"</b>";
     document.getElementById("spacesCount").innerHTML = "<b>"+spacesCount+"</b>";
     if(metatag>0){
-    document.getElementById("metatag").innerHTML = metatag+"/150";
+    document.getElementById("metatag").innerHTML = "<b>"+metatag+"/150"+"</b>";
     }else{
         document.getElementById("metatag").innerHTML = "<b style = color:red>"+metatag+"/150"+"</b>";
     }
     if(facebookcount>0){
-        document.getElementById("facebookcount").innerHTML = facebookcount+"/250";
+        document.getElementById("facebookcount").innerHTML = "<b>"+facebookcount+"/250"+"</b>";
         }else{
             document.getElementById("facebookcount").innerHTML = "<b style = color:red>"+facebookcount+"/250"+"</b>";
     }
     if(googleCount>0){
-        document.getElementById("googleCount").innerHTML = googleCount+"/300";
+        document.getElementById("googleCount").innerHTML ="<b>"+googleCount+"/300"+"</b>" ;
         }else{
             document.getElementById("googleCount").innerHTML = "<b style = color:red>"+googleCount+"/300"+"</b>";
     }
     if(twitterCount>0){
-        document.getElementById("twitterCount").innerHTML = twitterCount+"/280";
+        document.getElementById("twitterCount").innerHTML = "<b>"+twitterCount+"/280"+"</b>";
         }else{
             document.getElementById("twitterCount").innerHTML = "<b style = color:red>"+twitterCount+"/250"+"</b>";
     }

@@ -36,4 +36,7 @@ function wordCount() {
         }else{
             document.getElementById("twitterCount").innerHTML = "<b style = color:red>"+twitterCount+"/250"+"</b>";
     }
+    
+    drawChart(count, text.length, spacesCount, facebookcount, googleCount, twitterCount, metatag)
+    
 }

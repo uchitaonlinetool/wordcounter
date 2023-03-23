@@ -160,17 +160,25 @@
 								</div>
 							</div>
 							<div class="col-md-5 col-sm-5">
+							
+									<div class="form-box">
+										<div class="c-detail">
+											<span class="fa fa-star cl-warning"></span> <strong>character without space Count:</strong>
+											<p id="characterWithoutSpace"></p>
+										</div>
+										</div>
+									
+
+								<div class="form-box">
+									<div class="c-detail">
+										<span class="fa fa-star cl-warning"></span> <strong> character with space Count:</strong>
+										<p id="charaCount"></p>
+									</div>
+								</div>
 								<div class="form-box">
 									<div class="c-detail">
 										<span class="fa fa-star cl-warning"></span> <strong>Words Count:</strong>
 										<p id="showCount"></p>
-									</div>
-								</div>
-
-								<div class="form-box">
-									<div class="c-detail">
-										<span class="fa fa-star cl-warning"></span> <strong> Character count:</strong>
-										<p id="charaCount"></p>
 									</div>
 								</div>
 
@@ -212,12 +220,22 @@
 									</div>
 								</div>
 							</div>
+							
 							<div class="col-md-5 col-sm-5">
 								<div class="form-box">
 									<div class="c-detail">
 										<span class="fa fa-star cl-warning"></span> <strong>Twitter (280
 											character limit)</strong>
 										<p id="twitterCount"></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-5 col-sm-5">
+								<div class="form-box">
+									<div class="c-detail">
+										<span class="fa fa-star cl-warning"></span> <strong>SMS (160
+											character limit)</strong>
+										<p id="smsCount"></p>
 									</div>
 								</div>
 							</div>
@@ -458,7 +476,7 @@
 	<script>
 		google.charts.load('current', { 'packages': ['corechart'] });
 		google.charts.setOnLoadCallback(drawChart);
-		function drawChart(count, character, spacesCount, facebookcount, googleCount, twitterCount, metatag) {
+		function drawChart(count, character, spacesCount, facebookcount, googleCount, twitterCount, metatag, smsCount) {
 			let text = document.getElementById("txtarea").value;
 			if (text.length > 0) {
 				var data = google.visualization.arrayToDataTable([
@@ -470,6 +488,7 @@
 					['Google', googleCount],
 					['Twitter', twitterCount],
 					['Meta tag', metatag],
+					['SMS', smsCount],
 				]);
 
 				var options = {

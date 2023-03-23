@@ -12,10 +12,15 @@ function wordCount() {
     var facebookcount  = 250 - text.length;
     var googleCount =  300 - text.length;
     var twitterCount =  280 - text.length;
+    var smsCount = 160 - text.length;
+    var characterWithoutSpace = text.replace(/ /g,"");
 
     document.getElementById("showCount").innerHTML =  "<b>"+count+"</b>";
     document.getElementById("charaCount").innerHTML =  "<b>"+text.length+"</b>";
     document.getElementById("spacesCount").innerHTML = "<b>"+spacesCount+"</b>";
+    document.getElementById("characterWithoutSpace").innerHTML = "<b>"+characterWithoutSpace.length+"</b>";
+
+
     if(metatag>0){
     document.getElementById("metatag").innerHTML = "<b>"+metatag+"/150"+"</b>";
     }else{
@@ -36,7 +41,13 @@ function wordCount() {
         }else{
             document.getElementById("twitterCount").innerHTML = "<b style = color:red>"+twitterCount+"/250"+"</b>";
     }
+    if(smsCount>0){
+        document.getElementById("smsCount").innerHTML = "<b>"+smsCount+"/160"+"</b>";
+        }else{
+            document.getElementById("smsCount").innerHTML = "<b style = color:red>"+smsCount+"/160"+"</b>";
+    }
+
     
-    drawChart(count, text.length, spacesCount, facebookcount, googleCount, twitterCount, metatag)
+    drawChart(count, text.length, spacesCount, facebookcount, googleCount, twitterCount, metatag, smsCount)
     
 }

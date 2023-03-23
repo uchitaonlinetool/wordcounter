@@ -1,0 +1,4 @@
+User-agent: * 
+Disallow:/version_0/
+Disallow:/comming%20soon/
+Sitemap: https://uchitaonlinetool.com/

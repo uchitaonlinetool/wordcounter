@@ -10,9 +10,8 @@
 
 	<meta name="title" content="Uchita Online Tool">
 	<meta name="description" content="Free online tools are usefull and helpfull
-			for our daily works. word counter is one of the free online tool">
-	<meta name="keywords" content="Free online words counter, online words
-			counter, online character counter">
+word counter is one of the free online tool">
+	<meta name="keywords" content="words counter, character counter, character count">
 	<meta name="robots" content="index, follow">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="language" content="English">
@@ -185,12 +184,7 @@
 									</div>
 								</div>
 
-								<div class="form-box">
-									<div class="c-detail">
-										<span class="fa fa-star cl-warning"></span><strong> Space Count:</strong>
-										<p id="spacesCount"></p>
-									</div>
-								</div>
+
 
 							</div>
 							<h4><strong>Words Counter for social media platform</strong></h4>
@@ -242,8 +236,19 @@
 									</div>
 								</div>
 							</div>
+
+							<div class="col-md-5 col-sm-5">
+								<div class="form-box">
+									<div class="c-detail">
+										<span class="fa fa-star cl-warning"></span><strong> Space Count:</strong>
+										<p id="spacesCount"></p>
+									</div>
+								</div>
+
+							</div>
 						</div>
 						<div class="col-md-12 col-sm-12">
+
 							<h4><strong>Graphical Report</strong></h4>
 							<br>
 							<div class="tab-content tabs">
@@ -251,6 +256,15 @@
 									<div id="myChart" style="width:50%; height: 250px">
 									</div>
 
+								</div>
+							</div>
+							<Br></Br>
+							<h3 style="text-align: center;" class="theme-cl">Each words with occurence count</h3>
+
+							<div class="form-box">
+								<div class="c-detail">
+									<br>
+									<p id="result"></p>
 								</div>
 							</div>
 						</div>
@@ -488,11 +502,6 @@
 					['Characters', character],
 					['Spaces', spacesCount],
 					['Words', count],
-					['Facebook', facebookcount],
-					['Google', googleCount],
-					['Twitter', twitterCount],
-					['Meta tag', metatag],
-					['SMS', smsCount],
 				]);
 
 				var options = {
@@ -508,10 +517,6 @@
 					['Characters', 100],
 					['Spaces', 0],
 					['Words', 100],
-					['Facebook', 0],
-					['Google', 0],
-					['Twitter', 0],
-					['Meta tag', 100],
 				]);
 
 				var options = {

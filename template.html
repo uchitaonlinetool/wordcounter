@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Uchita Online Tool</title>
+
+	<meta name="title" content="Uchita Online Tool">
+	<meta name="description" content="Free online tools are usefull and helpfull
+word counter is one of the free online tool">
+	<meta name="keywords" content="words counter, character counter, character count">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="English">
+	<meta name="revisit-after" content="20 days">
+	<meta name="author" content="Uchita Online Tool">
+
+	<meta name="google-site-verification" content="YKw9TSXFYUkBE1IyJGmX4VewUjmAKdKmSwk6WDKDaYw" />
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="assets/plugins/css/plugins.css">
+	<link rel=“canonical” href=”/wordcounter/” />
+
+
+	<!-- Custom style -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/responsiveness.css" rel="stylesheet">
+	<link id="jssDefault" rel="stylesheet" href="assets/css/skins/default.css">
+	<script src="assets/js/script.js"></script>
+	<!-- Google Analytics -->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-01F1FQFDL9"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-01F1FQFDL9');
+	</script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-01F1FQFDL9"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-01F1FQFDL9');
+	</script>
+	<!-- End Google Analytics -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="assets/utility/header.js" type="text/javascript" defer></script>
+	<script src="assets/utility/footer.js" type="text/javascript" defer></script>
+
+
+</head>
+
+<body>
+
+	<!-- ======================= Start Navigation ===================== -->
+    <header-component></header-component>
+
+	<!-- ======================= End Navigation ===================== -->
+
+	<!-- ======================= Start Banner ===================== -->
+
+	<!-- ======================= End Banner ===================== -->
+
+
+	<section class="tr-single-detail gray-bg">
+		<div class="container">
+			<div class="row">
+				<h1>Free Online Words Counter</h1>
+				<marquee scrollamount="12">
+					<a href="mailto:uchitaonlinetools@gmail.com" class="theme-cl"><strong> Note : please mail us any
+							suggestions and concerns related : uchitaonlinetools@gmail.com</strong></a>
+
+				</marquee>
+				<section class="gray-bg">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7 col-sm-7">
+								<div class="form-box">
+									<form class="c-form">
+										<div class="row">
+											<div class="col-sm-12">
+												<label class="theme-cl">Start Type or Copy Paste Content</label>
+												<textarea id="txtarea" oninput="wordCount()" class="form-control
+														height-150" placeholder="Enter text....."></textarea>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-5 col-sm-5">
+
+								<div class="form-box">
+									<div class="c-detail">
+										<span class="fa fa-star cl-warning"></span> <strong>character without space
+											Count:</strong>
+										<p id="characterWithoutSpace"></p>
+									</div>
+								</div>
+
+
+								<div class="form-box">
+									<div class="c-detail">
+										<span class="fa fa-star cl-warning"></span> <strong> character with space
+											Count:</strong>
+										<p id="charaCount"></p>
+									</div>
+								</div>
+								<div class="form-box">
+									<div class="c-detail">
+										<span class="fa fa-star cl-warning"></span> <strong>Words Count:</strong>
+										<p id="showCount"></p>
+									</div>
+								</div>
+
+
+
+							</div>
+							<h4><strong>Words Counter for social media platform</strong></h4>
+							<br>
+							<div class="col-md-5 col-sm-5">
+								<div class="form-box">
+									<div class="c-detail">
+										<span class="fa fa-star cl-warning"></span> <strong>Facebook (250
+											character limit)</strong>
+										<p id="facebookcount"></p>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-5 col-sm-5">
+								<div class="form-box">
+									<div class="c-detail">
+										<span class="fa fa-star cl-warning"></span> <strong>Website Metatag
+											(150 character limit)</strong>
+										<p id="metatag"></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-5 col-sm-5">
+								<div class="form-box">
+									<div class="c-detail">
+										<span class="fa fa-star cl-warning"></span> <strong>Google (300
+											character limit)</strong>
+										<p id="googleCount"></p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-5 col-sm-5">
+								<div class="form-box">
+									<div class="c-detail">
+										<span class="fa fa-star cl-warning"></span> <strong>Twitter (280
+											character limit)</strong>
+										<p id="twitterCount"></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-5 col-sm-5">
+								<div class="form-box">
+									<div class="c-detail">
+										<span class="fa fa-star cl-warning"></span> <strong>SMS (160
+											character limit)</strong>
+										<p id="smsCount"></p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-5 col-sm-5">
+								<div class="form-box">
+									<div class="c-detail">
+										<span class="fa fa-star cl-warning"></span><strong> Space Count:</strong>
+										<p id="spacesCount"></p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12">
+
+							<h4><strong>Graphical Report</strong></h4>
+							<br>
+							<div class="tab-content tabs">
+								<div role="tabpanel" class="tab-pane fade in active" id="Overview">
+									<div id="myChart" style="width:50%; height: 250px">
+									</div>
+
+								</div>
+							</div>
+							<Br></Br>
+							<h3 style="text-align: center;" class="theme-cl">Each words with occurence count</h3>
+
+							<div class="form-box">
+								<div class="c-detail">
+									<br>
+									<p id="result"></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-8 col-sm-12">
+
+							<div class="tab-content tabs">
+								<br>
+								<br>
+								<div role="tabpanel" class="tab-pane fade in active" id="Overview">
+									<!-- Description -->
+									<div class="row">
+										<div class="tr-single-box">
+											<div class="tr-single-header">
+												<h4 class="theme-cl"><i class="ti-files" class="theme-cl"></i>About
+													Word Counter </h4>
+											</div>
+											<div class="tr-single-body">
+												<p style="text-align: justify;">Word Counter is an easy to use online
+													tool for counting words,
+													characters, spaces. the words counter and character counter will
+													usefull for blog writer, eassy writers, articles or any content
+													writers etc.. Now a days Digital market platforms are having some
+													limits for characters such as Twitter's tweet character count
+													(140), Google's meta description (300), and Facebook's average
+													post display length (~250).</p>
+											</div>
+										</div>
+									</div>
+									<!-- Description -->
+									<div class="row">
+										<div class="tr-single-box">
+											<div class="tr-single-header">
+												<h4 class="theme-cl"><i class="ti-files" class="theme-cl"></i>What
+													are Features? </h4>
+											</div>
+											<div class="tr-single-body">
+												<P>You can able to count words, characters and spaces in this free
+													online tool website</P>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="tr-single-box">
+											<div class="tr-single-header">
+												<h4 class="theme-cl"><i class="ti-files" class="theme-cl"></i>How
+													To Use Tool </h4>
+											</div>
+											<div class="tr-single-body">
+												* You can type or copy paste your content in the text area <br>
+												* After typing your content, count of words and character will show
+												in left side
+											</div>
+										</div>
+									</div>
+
+
+
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+
+						<!-- Sidebar Start -->
+						<!-- <div class="col-md-4 col-sm-12">
+							<br>
+							<br>
+							<div class="tr-single-box">
+								<div class="tr-single-header">
+									<h4 class="theme-cl"> Share this</h4>
+								</div>
+
+								<div class="tr-single-body">
+							      !-- advertisements --
+								</div>
+
+							</div>
+
+						</div> -->
+						<!-- /col-md-4 -->
+						<div class="col-md-4 col-sm-12">
+							<br>
+							<br>
+							<div class="tr-single-box">
+								<div class="tr-single-header">
+									<h4 class="theme-cl"> Share this</h4>
+								</div>
+
+								<div class="tr-single-body">
+									<ul class="extra-service half">
+										<li>
+											<div class="icon-box-icon-block">
+												<a href="#">
+													<div class="icon-box-round">
+														<i class="fa fa-facebook"></i>
+													</div>
+													<div class="icon-box-text">
+														Facebook
+													</div>
+												</a>
+											</div>
+										</li>
+
+										<li>
+											<div class="icon-box-icon-block">
+												<a href="#">
+													<div class="icon-box-round">
+														<i class="fa fa-google-plus"></i>
+													</div>
+													<div class="icon-box-text">
+														Google plus
+													</div>
+												</a>
+											</div>
+										</li>
+
+										<li>
+											<div class="icon-box-icon-block">
+												<a href="#">
+													<div class="icon-box-round">
+														<i class="fa fa-twitter"></i>
+													</div>
+													<div class="icon-box-text">
+														Twitter
+													</div>
+												</a>
+											</div>
+										</li>
+
+										<li>
+											<div class="icon-box-icon-block">
+												<a href="#">
+													<div class="icon-box-round">
+														<i class="fa fa-linkedin"></i>
+													</div>
+													<div class="icon-box-text">
+														LinkedIn
+													</div>
+												</a>
+											</div>
+										</li>
+
+										<li>
+											<div class="icon-box-icon-block">
+												<a href="#">
+													<div class="icon-box-round">
+														<i class="fa fa-instagram"></i>
+													</div>
+													<div class="icon-box-text">
+														Instagram
+													</div>
+												</a>
+											</div>
+										</li>
+
+										<li>
+											<div class="icon-box-icon-block">
+												<a href="#">
+													<div class="icon-box-round">
+														<i class="fa fa-pinterest"></i>
+													</div>
+													<div class="icon-box-text">
+														Pinterest
+													</div>
+												</a>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+			</div>
+	</section>
+<Footer-component></Footer-component>
+	<script>
+		google.charts.load('current', { 'packages': ['corechart'] });
+		google.charts.setOnLoadCallback(drawChart);
+		function drawChart(count, character, spacesCount, facebookcount, googleCount, twitterCount, metatag, smsCount) {
+			let text = document.getElementById("txtarea").value;
+			if (text.length > 0) {
+				var data = google.visualization.arrayToDataTable([
+					['measure', 'Mhl'],
+					['Characters', character],
+					['Spaces', spacesCount],
+					['Words', count],
+				]);
+
+				var options = {
+					title: 'Graphical Representation',
+					is3D: true
+				};
+
+				var chart = new google.visualization.PieChart(document.getElementById('myChart'));
+				chart.draw(data, options);
+			} else {
+				var data = google.visualization.arrayToDataTable([
+					['words', 'Mhl'],
+					['Characters', 100],
+					['Spaces', 0],
+					['Words', 100],
+				]);
+
+				var options = {
+					title: 'Graphical Representation',
+					is3D: true
+				};
+
+				var chart = new google.visualization.PieChart(document.getElementById('myChart'));
+				chart.draw(data, options);
+			}
+		}
+
+	</script>
+
+</body>
+
+</html>
